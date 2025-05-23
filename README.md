@@ -66,4 +66,8 @@ int main()
 
 ## OUTPUT :
 ![CRYPTO EX 1](https://github.com/user-attachments/assets/d2fe5341-ff9f-4480-8965-7a4fa5f37ce7)
+## RESULT:
+The Caesar Cipher program successfully encrypted the input "LOSHINI" using a key of 3 to produce the cipher text "ORVKLQL". The output confirms correct implementation of the encryption logic.
+
+
 
