@@ -1,4 +1,7 @@
-## EX. NO: 1 : IMPLEMENTATION OF CAESAR CIPHER
+# EX. NO: 1 : IMPLEMENTATION OF CAESAR CIPHER
+## NAME:LOSHINI G
+## REGISTER NO:212223220051
+## DEPARTMENT:IT
  
 
 ## AIM:
@@ -27,8 +30,40 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ### STEP-5: Display the cipher text obtained above.
 
 
-PROGRAM :-
+## PROGRAM:
+```
+#include <stdio.h>
+#include <string.h>
+
+void caesarCipher(char *text, int key) 
+{
+    for (int i = 0; text[i]; i++) 
+    {
+        if (text[i] >= 'A' && text[i] <= 'Z')
+            text[i] = ((text[i] - 'A' + key + 26) % 26) + 'A';
+    }
+}
+
+int main() 
+{
+    char text[100];
+    int key;
+
+    printf("Enter the plain text (uppercase letters only): ");
+    scanf("%s", text); // You can use fgets for spaces
+
+    printf("Enter the key: ");
+    scanf("%d", &key);
+
+    caesarCipher(text, key);
+    printf("Cipher text: %s\n", text);
+
+    return 0;
+}
+
+```
 
 
+## OUTPUT :
+![CRYPTO EX 1](https://github.com/user-attachments/assets/d2fe5341-ff9f-4480-8965-7a4fa5f37ce7)
 
-OUTPUT :-
